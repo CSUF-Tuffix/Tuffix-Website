@@ -4,10 +4,11 @@
 # AUTHOR: Jared Dyreson
 # INSTITUTION: California State University Fullerton
 
-# sudo apt-get update
-# sudo apt-get install -y python3-pip
-# TODO: update the whole system now?
-# sudo apt-get upgrade -y
-sudo pip3 install git+https://git@github.com/mshafae/tuffix.git@TuffixLib
+sudo pip3 install pycairo
+# NOTE: changed from `git+https://git@github.com/mshafae/tuffix.git@TuffixLib`
+sudo pip3 install git+https://git@github.com/CSUF-Tuffix/Tuffix-2.git@master
+
+# NOTE: this needs to either change or keep the same after domain has been properly relinquished
+
 wget -O - https://www.tuffix.xyz/repo/KEY.gpg | sudo apt-key add -
 sudo echo "deb https://www.tuffix.xyz/repo focal main" > /etc/apt/sources.list.d/internal.list 

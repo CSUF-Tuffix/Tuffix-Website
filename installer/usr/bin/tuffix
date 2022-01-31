@@ -6,7 +6,10 @@ import sys
 # packages
 
 # local modules
-import tuffixlib
+import Tuffix
 
-if __name__ == '__main__':
-    sys.exit(tuffixlib.main(tuffixlib.DEFAULT_BUILD_CONFIG, sys.argv))
+if not sys.argv:
+    Tuffix.print_usage()
+    quit()
+
+Tuffix.main(sys.argv)
